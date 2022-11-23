@@ -2,11 +2,12 @@ import operation
 
 
 def record_pheople():
-    name = input('Введите имя - ')
-    surname = input('Введите фамилию - ')
-    phone = input('Введите телефон - ')
-    discreption = input('Введите описание - ')
-    operation.record_file(name, surname, phone, discreption)
+    id = int(input('Введите ID студента: '))
+    name = input('Введите имя студента: ')
+    surname = input('Введите фамилию студента: ')
+    phone = input('Введите телефон студента: ')
+    faculty = input('Введите факультет студента:  ')
+    operation.record_file(id, name, surname, phone, faculty)
     print('Данные записаны!')
 
     choice = input('Записать еще человека? (Да/Нет) - ')
